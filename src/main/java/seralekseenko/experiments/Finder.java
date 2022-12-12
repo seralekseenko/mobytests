@@ -9,7 +9,7 @@ public class Finder {
 
     for (var index = 0; index < sortedArray.length; index++) {
       if (target == sortedArray[index]) {
-        return OptionalInt.of(index + 1);
+        return OptionalInt.of(index);
       }
     }
 

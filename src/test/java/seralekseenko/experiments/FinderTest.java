@@ -13,8 +13,8 @@ class FinderTest {
 
   private final Random rnd = ThreadLocalRandom.current();
 
-  @RepeatedTest(1)
-  @DisplayName("findIndex' method with typical arguments ...")
+  @RepeatedTest(50)
+  @DisplayName("'findIndex' method with typical arguments ...")
   public void findIndex() {
     //preparing data
     var uniqueSortedInts = rnd.ints(-50, 50)
@@ -33,6 +33,5 @@ class FinderTest {
     assertWithMessage(message)
         .that(result)
         .isEqualTo(expectedIndex);
-
   }
 }
